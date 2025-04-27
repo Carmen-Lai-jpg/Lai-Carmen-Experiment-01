@@ -1,3 +1,7 @@
+@font-face{
+    src: url("../assets/fonts/Gradient.otf");
+    font-family: gradient
+}
 /* 
 The Formula:
     selector{
@@ -14,11 +18,12 @@ The Formula:
 */
 body{
     background-color: rgb(206, 235, 134);
+    background-image: url(../assets/images/spongebob.png);
 }
 .header{
     background-color: rgb(182, 221, 236);
     padding: 10px; 
-    margin-top: 30px;
+   
 }
 
 /* STEP 1: h1
@@ -26,9 +31,13 @@ body{
     - Change the color of the text (color)
 */
 h1{
-  color:blue;
+  color: blue;
   margin-top: 0%;
-}
+  font-family: Gradient;
+    
+  }
+  
+
 h2{
     color:purple;
     margin-bottom: 0%;
@@ -52,13 +61,24 @@ h2{
 .troll{
     border: 5px solid red;
 }
+#nyan{
+    position:absolute;
+    left: 60%;
+    top: 20%;
+}
+#memes{
+    position:relative;
+    background-color: #57C785;
+}
 /* STEP 4: p 
     - Align the text to the center (text-align)
 */
 span{
     background-color: yellow;
 }
-
+.ready{
+    font-size: 100pt;
+}
 /* STEP 5: a
     -  Change the color of the link (color)
 */
@@ -74,4 +94,7 @@ ul{
 .favorite{
     font-weight: bold;
     background-color: chartreuse;
+}
+#lovestruck{
+    font-size: 20pt;
 }
