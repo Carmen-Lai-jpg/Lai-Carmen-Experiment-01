@@ -19,6 +19,8 @@ The Formula:
 body{
     background-color: rgb(206, 235, 134);
     background-image: url(../assets/images/spongebob.png);
+    background:linear-gradient(to right, rgb(206, 235, 134), rgb(182, 221, 236));
+    background-blend-mode: overlay;
 }
 .header{
     background-color: rgb(182, 221, 236);
@@ -34,14 +36,24 @@ h1{
   color: blue;
   margin-top: 0%;
   font-family: Gradient;
+  text-align: center
     
   }
   
 
 h2{
+    text-align: center;
     color:purple;
     margin-bottom: 0%;
-  }
+    text-decoration: underline  
+}
+h3{
+    text-align: center;
+    color:blue;
+    margin-bottom: 0%;
+    text-decoration: underline;
+    display: block;
+}
 /* STEP 2: h2 
     - Align the text to the center (text-align)
     - Change the color of the text (color)
@@ -55,15 +67,32 @@ h2{
     - Add a border to the images with any size, style, and color (border)
     - Change the width of the images (width)
 */
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 .nyan{
     border: 5px solid pink;
+    width: 80%;
+    height: auto;
+    max-height: 500px;
 }
 .troll{
     border: 5px solid red;
+    width: 30%
 }
 #nyan{
     position:absolute;
     left: 60%;
+    top: 20%;
+    padding-left: 50px
+}
+
+#troll{
+    position:absolute;
+    left: 50%;
     top: 20%;
 }
 #memes{
@@ -89,12 +118,40 @@ span{
     - Move the bullet points with the text (list-style-position: inside;)
 */
 ul{
-    width: 200px;
+    text-align: left;
+    list-style-position: inside;
+    list-style-type: square;
+    margin: 0;
+    width: fit-content;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .favorite{
     font-weight: bold;
     background-color: chartreuse;
 }
+
+video{
+    float:right;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#Falling Rain{
+    margin-top: 100px;
+    text-align: center;
+}
+audio{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: auto;
+}
+/* STEP 7: li
+    - Change the color of the text (color)
+    - Change the font size of the text (font-size)
+*/
 #lovestruck{
     font-size: 20pt;
+    text-align: center;
 }
